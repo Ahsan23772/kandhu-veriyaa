@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kandhu Veriyaa | Contact</title>
+  <link rel="stylesheet" href="css/style.css?v=5">
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Kandhu Veriyaa logo">
+        <span class="logoname">KANDHU VERIYAA</span>
+      </a>
+      <button class="menu-btn" onclick="toggleMenu()">Menu</button>
+      <nav>
+        <ul id="main-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="charters.html">Charters</a></li>
+          <li><a href="species.html">Species</a></li>
+          <li><a href="seasons.html">Seasons</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="rates.html">Rates</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <h1>Contact Us</h1>
+
+      <div class="cards" style="margin-bottom:30px;">
+        <div class="card">
+          <h3>Phone</h3>
+          <p>+960 999-9999</p>
+        </div>
+        <div class="card">
+          <h3>Email</h3>
+          <p>info@kandhuveriyaa.mv</p>
+        </div>
+      </div>
+
+      <h2>Send a Booking Request</h2>
+      <p>please fill the form to book a trip</p>
+      <p id="success-msg" class="success">Thank you!!! Your request has been received. We will contact you soon.</p>
+
+      <form id="booking-form" onsubmit="return validateForm()">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name">
+        <div id="err-name" class="error"></div>
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email">
+        <div id="err-email" class="error"></div>
+
+        <label for="phone">Phone</label>
+        <input type="text" id="phone" name="phone">
+        <div id="err-phone" class="error"></div>
+
+        <label for="date">Trip Date</label>
+        <input type="date" id="date" name="date">
+        <div id="err-date" class="error"></div>
+
+        <label for="trip">Charter Type</label>
+        <select id="trip" name="trip">
+          <option value="">Select one</option>
+          <option value="halfday">Half Day</option>
+          <option value="fullday">Full Day Offshore</option>
+          <option value="poppingjigging">Popping / Jigging</option>
+          <option value="sunset">Sunset & Dolphin Cruise</option>
+        </select>
+        <div id="err-trip" class="error"></div>
+
+        <label for="people">Number of people</label>
+        <input type="number" id="people" name="people" min="1" max="6">
+        <div id="err-people" class="error"></div>
+
+        <label for="message">Message (optional)</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit" class="btn" style="margin-top:15px; border:none; cursor:pointer;">Send Request</button>
+      </form>
+
+      <h2>Meeting Point</h2>
+      <ul>
+        <li>Location: Hulhumalé Lakudi Jetty</li>
+        <li>Time: Please arrive 20 minutes before departure</li>
+       <li>What to bring: Sunscreen, a hat, and your ID/Passport</li>
+    </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Important Links</p>
+      <div class="footerlinks">
+        <a href="https://visitmaldives.com" target="_blank">Visit Maldives</a>
+        <a href="https://www.igfa.org" target="_blank">International Game Fish Association</a>
+        <a href="https://www.meteorology.gov.mv" target="_blank">Maldives Meteorological Service</a>
+      </div>
+      <div class="footer-bottom">
+       Kandhu Veriyaa· © Copyright 2026 · Sports Fishing charter boat
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

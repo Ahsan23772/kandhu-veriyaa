@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kandhu Veriyaa | Gallery</title>
+  <link rel="stylesheet" href="css/style.css?v=5">
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Kandhu Veriyaa logo">
+        <span class="logoname">KANDHU VERIYAA</span>
+      </a>
+      <button class="menu-btn" onclick="toggleMenu()">Menu</button>
+      <nav>
+        <ul id="main-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="charters.html">Charters</a></li>
+          <li><a href="species.html">Species</a></li>
+          <li><a href="seasons.html">Seasons</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="rates.html">Rates</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <h1>Gallery</h1>
+      <p>Click to see the picture.</p>
+
+      <div id="imgContainer" style="display:none; margin-bottom:20px;">
+        <span class="close-btn" onclick="closeImage()">Close</span>
+        <img id="expandedImg" src="" alt="">
+        <p id="imgText"></p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="images/boat.jpg" alt="Our fishing boat" onclick="showImage(this)">
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/boat2.jpg" alt="Boat view night" onclick="showImage(this)">
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/tuna.jpg" alt="Yellowfin tuna" onclick="showImage(this)">
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/sailfish.jpg" alt="Sailfish catch" onclick="showImage(this)">
+        </div>
+
+        <div class="gallery-item">
+          <img src="images/katollmap.jpg" alt="Map of k atoll" onclick="showImage(this)">
+        </div>
+    
+        <div class="gallery-item">
+          <img src="images/sunset.jpg" alt="Sunset view" onclick="showImage(this)">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Important Links</p>
+      <div class="footerlinks">
+        <a href="https://visitmaldives.com" target="_blank">Visit Maldives</a>
+        <a href="https://www.igfa.org" target="_blank">International Game Fish Association</a>
+        <a href="https://www.meteorology.gov.mv" target="_blank">Maldives Meteorological Service</a>
+      </div>
+      <div class="footer-bottom">
+       Kandhu Veriyaa· © Copyright 2026 · Sports Fishing charter boat
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
